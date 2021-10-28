@@ -1,4 +1,4 @@
-import { Typography, Grid, Stack } from '@mui/material';
+import { Typography, Grid } from '@mui/material';
 import InputForm from './components/InputForm/InputForm';
 import ShorterButton from './components/Button/ShorterButton';
 import ShorterLink from './components/ShorterLink/ShorterLink';
