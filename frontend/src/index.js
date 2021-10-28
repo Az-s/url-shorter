@@ -4,12 +4,12 @@ import { BrowserRouter } from "react-router-dom";
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
-import reducer from './store/reducer/reducer'
+import urlReducer from './store/reducer/reducer'
 import App from './App';
 import './index.css';
 
 const rootReducer = combineReducers({
-  link: reducer,
+  link: urlReducer,
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

@@ -10,21 +10,7 @@ function App() {
       <Typography variant="h3" gutterBottom component="div" mt={5}>
         Shorten your link!
       </Typography>
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-        autoComplete="off"
-        mt={3}
-      >
-        <Grid item >
-          <InputForm />
-        </Grid>
-        <Grid>
-          <ShorterButton />
-        </Grid>
-      </Grid>
+      <InputForm />
       <ShorterLink />
     </div>
   );
