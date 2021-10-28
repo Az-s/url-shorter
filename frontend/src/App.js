@@ -1,23 +1,31 @@
-import logo from './logo.svg';
+import { Typography, Grid, Stack } from '@mui/material';
+import InputForm from './components/InputForm/InputForm';
+import ShorterButton from './components/Button/ShorterButton';
+import ShorterLink from './components/ShorterLink/ShorterLink';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Typography variant="h3" gutterBottom component="div" mt={5}>
+        Shorten your link!
+      </Typography>
+      <Grid
+        container
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+        autoComplete="off"
+        mt={3}
+      >
+        <Grid item >
+          <InputForm />
+        </Grid>
+        <Grid>
+          <ShorterButton />
+        </Grid>
+      </Grid>
+      <ShorterLink />
     </div>
   );
 }
